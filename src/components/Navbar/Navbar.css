@@ -1,0 +1,106 @@
+@import '../../index.css';
+
+.Navbar {
+  height: 10vh;
+  width: 100%;
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 400ms ease-in-out;
+}
+
+.Navbar__links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Navbar__links-logo {
+  position: relative;
+  background-image: url(../../../public/images/paradise-logo.png),
+    linear-gradient(
+      25deg,
+      hsl(var(--clr-primary)) 0%,
+      hsl(var(--clr-secondary)) 100%
+    );
+  background-size: cover;
+  background-color: hsl(var(--clr-light) / 0.1);
+  background-blend-mode: multiply;
+  width: 5em;
+  height: 5em;
+  margin: 0 2em;
+}
+.Navbar__links-logo::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-25deg, #1c0449 0%, #f10e34 100%);
+  transform: translate3d(-12px, 21px, 0) scale(0.99);
+  filter: blur(29px);
+  opacity: var(0.64);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+.Navbar__links-logo::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+
+.Navbar__links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.Navbar__menu {
+  display: flex;
+  flex-direction: column;
+  transition: all 400ms ease-in-out;
+}
+
+.Navbar__menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 6em;
+  right: 5em;
+  transition: all 400ms ease-in-out;
+}
+
+.Navbar__menu-container--links {
+    transition: all 400ms ease-in-out;
+}
+
+.Navbar__menu-container--links p {
+  color: hsl(var(--clr-light));
+  padding: 1em;
+  text-transform: uppercase;
+  transition: all 400ms ease-in-out;
+}
+
+.Navbar__menu-container--links p a {
+  color: hsl(var(--clr-light));
+  transition: all 400ms ease-in-out;
+}
+
+.Navbar__icon {
+    cursor: pointer;
+    font-size: 2rem;
+    transition: all 400ms ease-in-out;
+}
+
