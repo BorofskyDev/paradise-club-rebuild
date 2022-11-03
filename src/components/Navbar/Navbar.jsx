@@ -32,7 +32,7 @@ function Navbar() {
         {toggleMenu && (
           <div className="Navbar__menu-container">
             <div className="Navbar__menu-container--links">
-              <Menu />
+              <Menu class="Navbar__menu-el"/>
             </div>
           </div>
         )}

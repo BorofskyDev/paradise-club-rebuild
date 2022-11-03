@@ -104,3 +104,6 @@
     transition: all 400ms ease-in-out;
 }
 
+.Navbar__menu-el {
+    transition: all 400ms ease-in-out;
+}
